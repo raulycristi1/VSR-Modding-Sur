@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farming Simulator Mods</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+<script>
+// Función para cambiar el idioma
+    function cambiarIdioma(idioma) {
+	const descripciones = document.querySelectorAll('.descripcion-mod');
+
+	descripciones.forEach(descripcion => {
+		if (idioma === 'es') {
+			descripcion.textContent = descripcion.getAttribute('data-es');
+		} else if (idioma === 'en') {
+			descripcion.textContent = descripcion.getAttribute('data-en');
+		} else if (idioma === 'de') {
+			descripcion.textContent = descripcion.getAttribute('data-de');
+		}
+	});
+}
+</script>
 </head>
 <body class="bg-gray-100">
     <header class="bg-green-600 text-white p-6 text-center shadow-md">
