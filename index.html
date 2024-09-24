@@ -6,11 +6,14 @@
     <title>Farming Simulator Mods</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <script>
-        // Función para cambiar el idioma
+        // Función para cambiar el idioma de las descripciones
         function cambiarIdioma(idioma) {
+            // Seleccionar todas las descripciones de los mods
             const descripciones = document.querySelectorAll('.descripcion-mod');
-
+            
+            // Iterar sobre todas las descripciones para cambiar el contenido según el idioma seleccionado
             descripciones.forEach(descripcion => {
+                // Cambiar el texto según el idioma seleccionado
                 if (idioma === 'es') {
                     descripcion.textContent = descripcion.getAttribute('data-es');
                 } else if (idioma === 'en') {
@@ -123,7 +126,7 @@
     </section>
 
     <footer class="bg-green-600 text-white p-4 text-center mt-12">
-        <p class="text-sm">&copy; 2024 Mods Farming Simulator 22. Todos los derechos reservados.</p>
+        <p class="text-sm">&copy; 2024 Mis Mods para Farming Simulator. Todos los derechos reservados.</p>
         <p class="text-xs mt-2">Hecho con ❤️ por VSR Modding Sur</p>
     </footer>
 </body>
