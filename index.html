@@ -4,38 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farming Simulator Mods</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-    
-    <!-- Google Translate Widget -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.4/dist/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
-        /* Ajusta el estilo para el widget de Google Translate */
-        .skiptranslate {
-            display: none !important;
-        }
         body {
-            top: 0px !important; 
+            font-family: 'Poppins', sans-serif;
         }
     </style>
+
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-                pageLanguage: 'es', // idioma por defecto
-                includedLanguages: 'es,en,de', // idiomas disponibles
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                pageLanguage: 'es',
+                includedLanguages: 'es,en,de',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
             }, 'google_translate_element');
         }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script>
-        // Función para cambiar el idioma de las descripciones
         function cambiarIdioma(idioma) {
-            // Seleccionar todas las descripciones de los mods
             const descripciones = document.querySelectorAll('.descripcion-mod');
-            
-            // Iterar sobre todas las descripciones para cambiar el contenido según el idioma seleccionado
             descripciones.forEach(descripcion => {
-                // Cambiar el texto según el idioma seleccionado
                 if (idioma === 'es') {
                     descripcion.textContent = descripcion.getAttribute('data-es');
                 } else if (idioma === 'en') {
@@ -46,9 +40,8 @@
             });
         }
 
-        // Inicializar el idioma al cargar la página
         window.onload = function() {
-            cambiarIdioma('es'); // Cambia esto para el idioma predeterminado
+            cambiarIdioma('es');
         }
     </script>
 </head>
@@ -57,10 +50,8 @@
         <h1 class="text-5xl font-extrabold tracking-tight">Mods Farming Simulator 22</h1>
         <p class="text-lg mt-2 font-light">Descubre y descarga los mejores mods creados por la comunidad</p>
 
-        <!-- Contenedor para el Widget de Google Translate -->
         <div id="google_translate_element" class="mt-4"></div>
 
-        <!-- Selector de Idioma -->
         <div class="mt-4">
             <label for="idioma" class="text-white mr-2">Selecciona un idioma:</label>
             <select id="idioma" onchange="cambiarIdioma(this.value)" class="p-2 bg-white text-black rounded">
@@ -71,42 +62,21 @@
         </div>
     </header>
 
-    <section class="container mx-auto p-6">
+    <main class="container mx-auto p-6">
         <h2 class="text-3xl font-semibold mb-6 text-gray-700">Galería de Mods</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <!-- Primer Mod -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                <img src="imagenes_web/screenshot0.jpg" alt="Mod 1" class="w-full h-48 object-cover">
+            <article class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                <img src="/imagenes_web/screenshot0.jpg" alt="Mod 1" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="text-2xl font-semibold text-gray-800">Trans Volquete Lateral-38 TC</h3>
-                    <p class="text-gray-600 mt-2 descripcion-mod" data-es="Trans Volquete Lateral-38 es un remolque diseñado para facilitar el transporte y descarga lateral de materiales agrícolas y otros productos. Este volquete tiene una capacidad considerable, permitiendo a los jugadores manejar grandes volúmenes de carga de manera eficiente. La descarga lateral es una característica clave que ofrece flexibilidad en el manejo de materiales, especialmente en espacios reducidos donde la descarga trasera podría no ser factible. Además, el mod está diseñado con un alto nivel de detalle, ofreciendo una experiencia visual y funcional realista dentro del juego. - Suspensión Real - Selección Color Principal - Selección Color Segundario - Selección Color Llantas - Selección de Ruedas - Selección de Pegatinas - Selección de Enganche Trasero - Precio: Volquete Pequeño 18.500 € - Capacidad: 38.000 L." data-en="Side Tipper 38 TC is a trailer designed to facilitate lateral transport and unloading of agricultural materials and other products. This tipper has a considerable capacity, allowing players to handle large volumes of cargo efficiently. The side unloading is a key feature that offers flexibility in handling materials, especially in tight spaces where rear unloading may not be feasible. Additionally, the mod is designed with a high level of detail, providing a realistic visual and functional experience within the game. - Real Suspension - Main Color Selection - Secondary Color Selection - Wheel Color Selection - Wheel Selection - Sticker Selection - Rear Hitch Selection - Price: Small Tipper 18,500 € - Capacity: 38,000 L." data-de="Seitenschlepper 38 TC ist ein Anhänger, der entwickelt wurde, um den seitlichen Transport und das Entladen landwirtschaftlicher Materialien und anderer Produkte zu erleichtern. Dieser Kipper hat eine beträchtliche Kapazität, die es den Spielern ermöglicht, große Mengen Fracht effizient zu handhaben. Das seitliche Entladen ist ein Schlüsselelement, das Flexibilität beim Umgang mit Materialien bietet, insbesondere in engen Räumen, in denen ein hinteres Entladen möglicherweise nicht möglich ist. Darüber hinaus ist der Mod mit einem hohen Detailgrad gestaltet, was ein realistisches visuelles und funktionales Erlebnis im Spiel bietet. - Reale Federung - Hauptfarbauswahl - Sekundärfarbauswahl - Radfarbauswahl - Radwahl - Aufkleberauswahl - Auswahl der Anhängerkupplung - Preis: Kleiner Kipper 18.500 € - Kapazität: 38.000 L."></p>
+                    <p class="text-gray-600 mt-2 descripcion-mod" data-es="Trans Volquete Lateral-38 es un remolque diseñado para facilitar el transporte y descarga lateral de materiales agrícolas y otros productos." data-en="Side Tipper 38 TC is a trailer designed to facilitate lateral transport and unloading of agricultural materials and other products." data-de="Seitenschlepper 38 TC ist ein Anhänger, der entwickelt wurde, um den seitlichen Transport und das Entladen landwirtschaftlicher Materialien und anderer Produkte zu erleichtern."></p>
                     <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="inline-block mt-4 text-green-600 hover:text-green-800 hover:underline">Descargar</a>
                 </div>
-            </div>
+            </article>
 
-            <!-- Segundo Mod -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                <img src="imagenes_web/revo.jpg" alt="Mod 2" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-2xl font-semibold text-gray-800">Lizard Revolution</h3>
-                    <p class="text-gray-600 mt-2 descripcion-mod" data-es="Lizard Revolution es un Camión Creado Desde 0, No Está Basado en Ningún Camión Real. Animación en los 3 Ejes de Suspensión Real. Tiene Múltiple Animaciones Como Vibración en Tubo de Escape, Filtros, Depósito de Combustible y Motor. También Tiene Animación de Ventilador del Motor, Luces Personalizada, Pegatinas. Varias Opciones de Tienda y Cambios de color. -Motor: RV 480, RV 580, RV 650, RV 1723 -Configuración Color Principal -Configuración Color Secundario -Configuración Color Interior -Configuración Color Llantas -Configuración de Tubo de Escape -Configuración de Faros -Configuracion de Pegatinas -Precios: Lizard RV 480: 87.000 € Lizard RV 580: 97.125 € Lizard RV 650: 102.500 € Lizard RV 1723: 117.500 €." data-en="Lizard Revolution is a Truck Created From Scratch, Not Based on Any Real Truck. Animation in the 3 Axles of Real Suspension. It Has Multiple Animations Like Vibration in Exhaust Pipe, Filters, Fuel Tank and Engine. It Also Has Engine Fan Animation, Custom Lights, Stickers. Various Shop Options and Color Changes. -Engine: RV 480, RV 580, RV 650, RV 1723 -Main Color Configuration -Secondary Color Configuration -Interior Color Configuration -Wheel Color Configuration -Exhaust Pipe Configuration -Headlight Configuration -Sticker Configuration -Prices: Lizard RV 480: 87,000 € Lizard RV 580: 97,125 € Lizard RV 650: 102,500 € Lizard RV 1723: 117,500 €." data-de="Lizard Revolution ist ein Lkw, der von Grund auf neu erstellt wurde und nicht auf einem echten Lkw basiert. Animation an den 3 Achsen der realen Federung. Es hat mehrere Animationen wie Vibration im Auspuffrohr, Filter, Kraftstofftank und Motor. Es hat auch eine Motorlüfteranimation, benutzerdefinierte Lichter, Aufkleber. Verschiedene Shop-Optionen und Farbänderungen. -Motor: RV 480, RV 580, RV 650, RV 1723 -Hauptfarbkonfiguration -Sekundärfarbkonfiguration -Innere Farbkonfiguration -Reifenfarbkonfiguration -Auspuffrohrkonfiguration -Scheinwerferkonfiguration -Aufkleberkonfiguration -Preise: Lizard RV 480: 87.000 € Lizard RV 580: 97.125 € Lizard RV 650: 102.500 € Lizard RV 1723: 117.500 €." ></p>
-                    <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=289014&title=fs2022" target="_blank" class="inline-block mt-4 text-green-600 hover:text-green-800 hover:underline">Descargar</a>
-                </div>
-            </div>
-
-            <!-- Tercer Mod -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                <img src="imagenes_web/pt600.jpg" alt="Mod 3" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-2xl font-semibold text-gray-800">PT 600</h3>
-                    <p class="text-gray-600 mt-2 descripcion-mod" data-es="PT-600 Típico Camión Americano Grande y Robusto con Mucha Potencia, Varias Opciones de Tienda y Cambios de color. -Motor: PT 405 PT 550 PT 600 -Configuración Color Interior -Configuración Color Principal -Configuración Color Secundario -Configuración Color Vinilos -Configuración Color Llantas -Configuración de Vinilos -Configuración de Balizas y Parachoques -Luces Marcador y Botonera -Precios: PT 405: 95000 € PT 550: 119.125 € PT 600: 185.500 €." data-en="PT-600 Typical Large and Robust American Truck with Lots of Power, Various Shop Options and Color Changes. -Engine: PT 405 PT 550 PT 600 -Interior Color Configuration -Main Color Configuration -Secondary Color Configuration -Vinyl Color Configuration -Wheel Color Configuration -Vinyl Configuration -Beacon and Bumper Configuration -Marker Lights and Button Box -Prices: PT 405: 95,000 € PT 550: 119,125 € PT 600: 185,500 €." data-de="PT-600 Typischer großer und robuster amerikanischer Lkw mit viel Leistung, verschiedene Optionen im Geschäft und Farbänderungen. -Motor: PT 405 PT 550 PT 600 -Innere Farbkonfiguration -Hauptfarbkonfiguration -Sekundärfarbkonfiguration -Vinylfarbkonfiguration -Reifenfarbkonfiguration -Vinylkonfiguration -Konfiguration von Leuchten und Stoßfängern -Markierungslichter und Tastenfeld -Preise: PT 405: 95.000 € PT 550: 119.125 € PT 600: 185.500 €." ></p>
-                    <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=285159&title=fs2022" target="_blank" class="inline-block mt-4 text-green-600 hover:text-green-800 hover:underline">Descargar</a>
-                </div>
-            </div>
-
-            <!-- Añade más mods aquí -->
+            <!-- Agrega más mods aquí -->
         </div>
-    </section>
+    </main>
 
     <footer class="bg-green-600 text-white p-4 text-center mt-12">
         <p class="text-sm">&copy; 2024 Mis Mods para Farming Simulator. Todos los derechos reservados.</p>
