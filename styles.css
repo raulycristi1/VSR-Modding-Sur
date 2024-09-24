@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 .bg-custom {
-    background-color: #B4C618; /* Tu color personalizado */
+    background-color: #B4C618; /* Tu color personalizado cabezera */
 }
 
 .bg-text {
-    background-color: #FE0000; /* Tu color personalizado */
+    background-color: #FE0000; /* Tu color personalizado texto cabezera */
 }
