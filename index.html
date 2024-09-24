@@ -4,29 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farming Simulator Mods</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.4/dist/tailwind.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
-
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es',
-                includedLanguages: 'es,en,de',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <script>
+        // Función para cambiar el idioma de las descripciones
         function cambiarIdioma(idioma) {
             const descripciones = document.querySelectorAll('.descripcion-mod');
             descripciones.forEach(descripcion => {
@@ -40,21 +20,21 @@
             });
         }
 
+        // Cargar idioma por defecto
         window.onload = function() {
             cambiarIdioma('es');
         }
     </script>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-green-600 text-white p-6 text-center shadow-md">
+    <header class="bg-green-600 text-white p-6 text-center shadow-lg relative">
         <h1 class="text-5xl font-extrabold tracking-tight">Mods Farming Simulator 22</h1>
         <p class="text-lg mt-2 font-light">Descubre y descarga los mejores mods creados por la comunidad</p>
 
-        <div id="google_translate_element" class="mt-4"></div>
-
-        <div class="mt-4">
-            <label for="idioma" class="text-white mr-2">Selecciona un idioma:</label>
-            <select id="idioma" onchange="cambiarIdioma(this.value)" class="p-2 bg-white text-black rounded">
+        <!-- Selector de Idioma -->
+        <div class="absolute top-6 right-6">
+            <label for="idioma" class="text-white mr-2">Idioma:</label>
+            <select id="idioma" onchange="cambiarIdioma(this.value)" class="p-2 bg-white text-black rounded shadow-md">
                 <option value="es">Español</option>
                 <option value="en">Inglés</option>
                 <option value="de">Alemán</option>
@@ -62,21 +42,54 @@
         </div>
     </header>
 
-    <main class="container mx-auto p-6">
+    <section class="container mx-auto p-6">
         <h2 class="text-3xl font-semibold mb-6 text-gray-700">Galería de Mods</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <article class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                <img src="/imagenes_web/screenshot0.jpg" alt="Mod 1" class="w-full h-48 object-cover">
+            <!-- Primer Mod -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                <img src="imagenes_web/screenshot0.jpg" alt="Mod 1" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="text-2xl font-semibold text-gray-800">Trans Volquete Lateral-38 TC</h3>
-                    <p class="text-gray-600 mt-2 descripcion-mod" data-es="Trans Volquete Lateral-38 es un remolque diseñado para facilitar el transporte y descarga lateral de materiales agrícolas y otros productos." data-en="Side Tipper 38 TC is a trailer designed to facilitate lateral transport and unloading of agricultural materials and other products." data-de="Seitenschlepper 38 TC ist ein Anhänger, der entwickelt wurde, um den seitlichen Transport und das Entladen landwirtschaftlicher Materialien und anderer Produkte zu erleichtern."></p>
+                    <p class="text-gray-600 mt-2 descripcion-mod" 
+                       data-es="Trans Volquete Lateral-38 es un remolque diseñado para facilitar el transporte y descarga lateral de materiales agrícolas." 
+                       data-en="Trans Side Dumper-38 is a trailer designed to facilitate the transport and lateral unloading of agricultural materials." 
+                       data-de="Trans Seitenausheber-38 ist ein Anhänger, der für den Transport und die seitliche Entladung landwirtschaftlicher Materialien entwickelt wurde.">
+                    </p>
                     <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="inline-block mt-4 text-green-600 hover:text-green-800 hover:underline">Descargar</a>
                 </div>
-            </article>
+            </div>
 
-            <!-- Agrega más mods aquí -->
+            <!-- Segundo Mod -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                <img src="imagenes_web/revo.jpg" alt="Mod 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">Lizard Revolution</h3>
+                    <p class="text-gray-600 mt-2 descripcion-mod" 
+                       data-es="Lizard Revolution es un camión creado desde cero, con animaciones realistas en los ejes de suspensión." 
+                       data-en="Lizard Revolution is a truck created from scratch, with realistic animations on the suspension axes." 
+                       data-de="Lizard Revolution ist ein von Grund auf neu gestalteter Lkw mit realistischen Animationen an den Aufhängungsachsen.">
+                    </p>
+                    <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=289014&title=fs2022" target="_blank" class="inline-block mt-4 text-green-600 hover:text-green-800 hover:underline">Descargar</a>
+                </div>
+            </div>
+
+            <!-- Tercer Mod -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                <img src="imagenes_web/pt600.jpg" alt="Mod 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">PT 600</h3>
+                    <p class="text-gray-600 mt-2 descripcion-mod" 
+                       data-es="PT-600 es un camión americano grande y robusto con mucha potencia." 
+                       data-en="PT-600 is a large and robust American truck with lots of power." 
+                       data-de="PT-600 ist ein großer und robuster amerikanischer Lkw mit viel Leistung.">
+                    </p>
+                    <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=285159&title=fs2022" target="_blank" class="inline-block mt-4 text-green-600 hover:text-green-800 hover:underline">Descargar</a>
+                </div>
+            </div>
+
+            <!-- Añade más mods aquí -->
         </div>
-    </main>
+    </section>
 
     <footer class="bg-green-600 text-white p-4 text-center mt-12">
         <p class="text-sm">&copy; 2024 Mis Mods para Farming Simulator. Todos los derechos reservados.</p>
