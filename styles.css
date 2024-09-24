@@ -6,6 +6,6 @@
     background-color: #B4C618; /* Tu color personalizado cabezera */
 }
 
-.bg-text {
-    background-color: #FE0000; /* Tu color personalizado texto cabezera */
+.text-custom {
+    color: #FE0000; /* Cambia esto por tu color personalizado para el texto */
 }
