@@ -5,27 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farming Simulator Mods</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-<script>
-// Función para cambiar el idioma
-    function cambiarIdioma(idioma) {
-	const descripciones = document.querySelectorAll('.descripcion-mod');
+    <script>
+        // Función para cambiar el idioma
+        function cambiarIdioma(idioma) {
+            const descripciones = document.querySelectorAll('.descripcion-mod');
 
-	descripciones.forEach(descripcion => {
-		if (idioma === 'es') {
-			descripcion.textContent = descripcion.getAttribute('data-es');
-		} else if (idioma === 'en') {
-			descripcion.textContent = descripcion.getAttribute('data-en');
-		} else if (idioma === 'de') {
-			descripcion.textContent = descripcion.getAttribute('data-de');
-		}
-	});
-}
-</script>
+            descripciones.forEach(descripcion => {
+                if (idioma === 'es') {
+                    descripcion.textContent = descripcion.getAttribute('data-es');
+                } else if (idioma === 'en') {
+                    descripcion.textContent = descripcion.getAttribute('data-en');
+                } else if (idioma === 'de') {
+                    descripcion.textContent = descripcion.getAttribute('data-de');
+                }
+            });
+        }
+    </script>
 </head>
 <body class="bg-gray-100">
     <header class="bg-green-600 text-white p-6 text-center shadow-md">
         <h1 class="text-5xl font-extrabold tracking-tight">Mods Farming Simulator 22</h1>
         <p class="text-lg mt-2 font-light">Descubre y descarga los mejores mods creados por la comunidad</p>
+
+        <!-- Selector de Idioma -->
+        <div class="mt-4">
+            <label for="idioma" class="text-white mr-2">Selecciona un idioma:</label>
+            <select id="idioma" onchange="cambiarIdioma(this.value)" class="p-2 bg-white text-black rounded">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+                <option value="de">Alemán</option>
+            </select>
+        </div>
     </header>
 
     <section class="container mx-auto p-6">
@@ -85,11 +95,26 @@
             </div>
             <!-- Tercer Mod -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                <img src="ruta_de_imagen_mod2.jpg" alt="Mod 2" class="w-full h-48 object-cover">
+                <img src="imagenes_web/pt600.jpg" alt="Mod 2" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h3 class="text-2xl font-semibold text-gray-800">Nombre del Mod 3</h3>
-                    <p class="text-gray-600 mt-2">Descripción breve del mod con algunas características clave.</p>
-					<a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="inline-block mt-4 text-green-600 hover:text-green-800 hover:underline">Descargar</a>
+                    <h3 class="text-2xl font-semibold text-gray-800">PT 600</h3>
+                    <p class="text-gray-600 mt-2">PT-600 Tipico Camion Americano Grande y Robusto con Mucha Potencia, Varias Opciones de Tienda y Cambios de color. 
+
+					-Motor: PT 405 PT 550 PT 600
+					-Configuración Color Interior
+					-Configuración Color Principal
+					-Configuración Color Secundario
+					-Configuración Color Vinilos
+					-Configuración Color Llantas
+					-Configuración de Vinilos
+					-Configuración de Balizas y Parachoques
+					-Luces Marcador y Botonera
+
+					Precios:
+					PT 405: 95000 €
+					PT 550: 119.125 €
+					PT 600: 185.500 €.</p>
+					<a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=285159&title=fs2022" target="_blank" class="inline-block mt-4 text-green-600 hover:text-green-800 hover:underline">Descargar</a>
                 </div>
             </div>
 
@@ -98,7 +123,7 @@
     </section>
 
     <footer class="bg-green-600 text-white p-4 text-center mt-12">
-        <p class="text-sm">&copy; 2024 Mis Mods para Farming Simulator. Todos los derechos reservados.</p>
+        <p class="text-sm">&copy; 2024 Mods Farming Simulator 22. Todos los derechos reservados.</p>
         <p class="text-xs mt-2">Hecho con ❤️ por VSR Modding Sur</p>
     </footer>
 </body>
