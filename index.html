@@ -5,43 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farming Simulator Mods</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <!-- Aquí enlazas tu archivo CSS -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Estilo para la ventana modal */
-        .modal {
-            display: none; /* Oculto por defecto */
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
-        }
-
-        .modal-content {
-            background-color: #fefefe;
-            margin: 10% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-            border-radius: 10px;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover, .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body class="bg-gray-100">
     <header class="bg-custom text-custom p-6 text-center shadow-lg relative">
@@ -49,24 +14,34 @@
         <p class="text-lg mt-2 font-light">Descubre y descarga los mejores mods creados por la comunidad</p>
     </header>
 
-    <!-- Botón para abrir la sección de ModHub -->
-    <div class="container mx-auto p-6 text-center">
-        <button id="modhubButton" class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
-            Ver Mods en ModHub
-        </button>
-    </div>
+    <!-- Sección de pestañas -->
+    <div class="container mx-auto p-6">
+        <div class="tabs-container">
+            <!-- Botones de pestañas -->
+            <div class="tabs flex justify-center mb-6">
+                <button class="tab-btn active" data-tab="vsrMods">Mods de VSR Modding Sur</button>
+                <button class="tab-btn" data-tab="modhubMods">Mods Publicados en ModHub</button>
+            </div>
 
-    <!-- Ventana modal -->
-    <div id="modhubModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 class="text-2xl font-semibold mb-4">Mods publicados en ModHub</h2>
-            <ul class="list-disc ml-5">
-                <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=292060&title=fs2022" target="_blank" class="text-blue-600 hover:underline">PT 600</a></li>
-                <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=289014&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Lizard Revolution</a></li>
-                <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Trans Volquete Lateral-38 TC</a></li>
-                <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=275922&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Lizard Diamond</a></li>
-            </ul>
+            <!-- Contenido de cada pestaña -->
+            <div id="vsrMods" class="tab-content active">
+                <h2 class="text-2xl font-semibold mb-4">Mods de VSR Modding Sur</h2>
+                <ul class="list-disc ml-5">
+                    <li>Mod 1: Descripción del mod 1</li>
+                    <li>Mod 2: Descripción del mod 2</li>
+                    <li>Mod 3: Descripción del mod 3</li>
+                </ul>
+            </div>
+
+            <div id="modhubMods" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-4">Mods publicados en ModHub</h2>
+                <ul class="list-disc ml-5">
+                    <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=292060&title=fs2022" target="_blank" class="text-blue-600 hover:underline">PT 600</a></li>
+                    <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=289014&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Lizard Revolution</a></li>
+                    <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Trans Volquete Lateral-38 TC</a></li>
+                    <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=275922&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Lizard Diamond</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -82,27 +57,22 @@
     </footer>
 
     <script>
-        // Obtener elementos de la ventana modal
-        var modal = document.getElementById("modhubModal");
-        var btn = document.getElementById("modhubButton");
-        var span = document.getElementsByClassName("close")[0];
+        // Obtener todos los botones de pestañas y contenidos
+        const tabs = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content');
 
-        // Cuando el usuario hace clic en el botón, abrir la ventana modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
+        // Agregar el evento click a cada botón de pestaña
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Quitar la clase 'active' de todos los botones y contenidos
+                tabs.forEach(btn => btn.classList.remove('active'));
+                contents.forEach(content => content.classList.remove('active'));
 
-        // Cuando el usuario hace clic en la "X", cerrar la ventana modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // Cuando el usuario hace clic fuera de la ventana modal, también cerrarla
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+                // Agregar la clase 'active' al botón y contenido correspondiente
+                tab.classList.add('active');
+                document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+            });
+        });
     </script>
 </body>
 </html>
