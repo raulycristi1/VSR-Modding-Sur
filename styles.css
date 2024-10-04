@@ -1,11 +1,102 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.bg-custom {
-    background-color: #B4C618; /* Tu color personalizado cabezera */
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-.text-custom {
-    color: #FE0000; /* Cambia esto por tu color personalizado para el texto */
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Estilos de las pestañas */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tabs button {
+    background-color: #f3f3f3;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+
+.tabs button.active {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.tabs button:hover {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.tabs-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Sección de contenido */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Links en los mods */
+ul li a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+ul li a:hover {
+    text-decoration: underline;
 }
