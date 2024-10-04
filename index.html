@@ -1,102 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Farming Simulator Mods</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-      <link rel="stylesheet" href="styles.css">
-      <script>
-         // Cargar idioma por defecto
-         window.onload = function() {
-             const descripciones = document.querySelectorAll('.descripcion-mod');
-             descripciones.forEach(descripcion => {
-                 descripcion.textContent = descripcion.getAttribute('data-es');
-             });
-         }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming Simulator Mods</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para la ventana modal */
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+        }
 
-         // Función para cargar mods de ModHub
-         function mostrarModsModHub() {
-            const modContainer = document.getElementById('modhub-mods');
-            modContainer.innerHTML = `
-               <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                  <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                     <img src="https://www.farming-simulator.com/images/mod_icon/modIcon_294442.jpg" alt="Mod 1" class="w-full h-48 object-cover" loading="lazy">
-                     <div class="p-4">
-                        <h3 class="text-2xl font-semibold text-gray-800">ModHub Mod 1</h3>
-                        <p class="text-gray-600 mt-2">Descripción del mod 1...</p>
-                        <a href="https://www.farming-simulator.com/mod.php?lang=es&mod_id=294442" 
-                           target="_blank" 
-                           class="inline-flex items-center mt-4 px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-lg shadow-lg hover:from-red-600 hover:to-red-800 transition duration-300 ease-in-out transform hover:scale-105">
-                           Descargar
-                        </a>
-                     </div>
-                  </div>
-                  <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                     <img src="https://www.farming-simulator.com/images/mod_icon/modIcon_287930.jpg" alt="Mod 2" class="w-full h-48 object-cover" loading="lazy">
-                     <div class="p-4">
-                        <h3 class="text-2xl font-semibold text-gray-800">ModHub Mod 2</h3>
-                        <p class="text-gray-600 mt-2">Descripción del mod 2...</p>
-                        <a href="https://www.farming-simulator.com/mod.php?lang=es&mod_id=287930" 
-                           target="_blank" 
-                           class="inline-flex items-center mt-4 px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-lg shadow-lg hover:from-red-600 hover:to-red-800 transition duration-300 ease-in-out transform hover:scale-105">
-                           Descargar
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            `;
-         }
-      </script>
-   </head>
-   <body class="bg-gray-100">
-      <header class="bg-custom text-custom p-6 text-center shadow-lg relative">
-         <h1 class="text-5xl font-extrabold tracking-tight">Mods Farming Simulator 22 by VSR Modding Sur</h1>
-         <p class="text-lg mt-2 font-light">Descubre y descarga los mejores mods creados por la comunidad</p>
-      </header>
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
 
-      <!-- Sección para mostrar mods desde ModHub -->
-      <section class="container mx-auto p-6">
-         <h2 class="text-3xl font-semibold mb-6 text-gray-700">Mods Publicados en ModHub</h2>
-         <button onclick="mostrarModsModHub()" class="px-6 py-2 bg-blue-500 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-            Mostrar Mods de ModHub
-         </button>
-         <div id="modhub-mods" class="mt-6">
-            <!-- Aquí se cargarán los mods al hacer clic en el botón -->
-         </div>
-      </section>
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
 
-      <!-- Sección de Mods existentes (ejemplo) -->
-      <section class="container mx-auto p-6">
-         <h2 class="text-3xl font-semibold mb-6 text-gray-700">Mods Vanquish081</h2>
-         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <!-- Primer Mod -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
-               <img src="imagenes_web/master.jpg" alt="Mod 1" class="w-full h-48 object-cover" loading="lazy">
-               <div class="p-4">
-                  <h3 class="text-2xl font-semibold text-gray-800">ArtMaster 2k24 Pack</h3>
-                  <p class="text-gray-600 mt-2 descripcion-mod" 
-                     data-es="Pack para la producción de sus propios productos agrícolas. - RokoMaster Produce cal. Precio: 12.500 €. - Fertimaster Produce fertilizante. Precio: 19.500 €. - PigMaster Produce alimento para cerdos. Precio: 22.500 € - MixMaster Produce alimento para vacas. Precio: 27.500 €." >
-                  </p>
-                  <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" 
-                     target="_blank" 
-                     class="inline-flex items-center mt-4 px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-lg shadow-lg hover:from-red-600 hover:to-red-800 transition duration-300 ease-in-out transform hover:scale-105">
-                     Descargar
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
+        .close:hover, .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-custom text-custom p-6 text-center shadow-lg relative">
+        <h1 class="text-5xl font-extrabold tracking-tight">Mods Farming Simulator 22 by VSR Modding Sur</h1>
+        <p class="text-lg mt-2 font-light">Descubre y descarga los mejores mods creados por la comunidad</p>
+    </header>
 
-      <footer class="bg-custom text-white p-4 text-center mt-12">
-         <p class="text-sm">&copy; 2024 Mods Farming Simulator 22. Todos los derechos reservados.</p>
-         <p class="text-xs mt-2">Hecho con ❤️ por raulycristi1</p>
-         <div class="mt-4">
+    <!-- Botón para abrir la sección de ModHub -->
+    <div class="container mx-auto p-6 text-center">
+        <button id="modhubButton" class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+            Ver Mods en ModHub
+        </button>
+    </div>
+
+    <!-- Ventana modal -->
+    <div id="modhubModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text-2xl font-semibold mb-4">Mods publicados en ModHub</h2>
+            <ul class="list-disc ml-5">
+                <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=292060&title=fs2022" target="_blank" class="text-blue-600 hover:underline">PT 600</a></li>
+                <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=289014&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Lizard Revolution</a></li>
+                <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Trans Volquete Lateral-38 TC</a></li>
+                <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=275922&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Lizard Diamond</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="bg-custom text-white p-4 text-center mt-12">
+        <p class="text-sm">&copy; 2024 Mods Farming Simulator 22. Todos los derechos reservados.</p>
+        <p class="text-xs mt-2">Hecho con ❤️ por raulycristi1</p>
+        <div class="mt-4">
             <a href="https://github.com/raulycristi1" class="mr-4 text-white hover:text-gray-300">GitHub</a>
             <a href="https://twitter.com/raulycristi1" class="mr-4 text-white hover:text-gray-300">Twitter</a>
             <a href="https://www.youtube.com/raulycristi1" class="mr-4 text-white hover:text-gray-300">Youtube</a>
             <a href="https://www.farming-simulator.com/mods.php?title=fs2022&searchMod=raulycristi1" class="mr-4 text-white hover:text-gray-300">ModHub</a>
-         </div>
-      </footer>
-   </body>
+        </div>
+    </footer>
+
+    <script>
+        // Obtener elementos de la ventana modal
+        var modal = document.getElementById("modhubModal");
+        var btn = document.getElementById("modhubButton");
+        var span = document.getElementsByClassName("close")[0];
+
+        // Cuando el usuario hace clic en el botón, abrir la ventana modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // Cuando el usuario hace clic en la "X", cerrar la ventana modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cuando el usuario hace clic fuera de la ventana modal, también cerrarla
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
 </html>
