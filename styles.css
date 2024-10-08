@@ -2,6 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #84AB14;
+    color: #870902; /* Código hex para el color */
     margin: 0;
     padding: 0;
 }
@@ -9,7 +10,7 @@ body {
 /* Header */
 header {
     background-color: #84AB14;
-    color: #fff;
+    color: #870902; /* Código hex para el color */
     padding: 20px 0;
     text-align: center;
 }
@@ -36,7 +37,7 @@ header p {
 
 .tabs button {
     background-color: #84AB14;
-    color: black;
+    color: #3498db; /* Código hex para el color */
     border: none;
     cursor: pointer;
     padding: 10px 20px;
@@ -92,11 +93,12 @@ footer a:hover {
 }
 
 /* Links en los mods */
-ul li a {
+footer ul li a {
     text-decoration: none;
-    color: #84AB14;
+    color: #ffffff; /* Color para los enlaces en el pie de página */
 }
 
-ul li a:hover {
+footer ul li a:hover {
     text-decoration: underline;
 }
+
