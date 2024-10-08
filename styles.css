@@ -8,7 +8,7 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #84AB14;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -46,12 +46,12 @@ header p {
 }
 
 .tabs button.active {
-    background-color: #4a90e2;
+    background-color: #84AB14;
     color: white;
 }
 
 .tabs button:hover {
-    background-color: #4a90e2;
+    background-color: #84AB14;
     color: white;
 }
 
@@ -69,7 +69,7 @@ header p {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #84AB14;
     color: white;
     padding: 20px;
     text-align: center;
@@ -94,7 +94,7 @@ footer a:hover {
 /* Links en los mods */
 ul li a {
     text-decoration: none;
-    color: #0073e6;
+    color: #84AB14;
 }
 
 ul li a:hover {
