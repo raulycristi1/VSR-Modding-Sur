@@ -1,79 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farming Simulator Mods</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-    <!-- Aquí enlazas tu archivo CSS -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-gray-100">
-    <header class="bg-custom text-custom p-6 text-center shadow-lg relative">
-        <h1 class="text-5xl font-extrabold tracking-tight">Mods Farming Simulator 22 by VSR Modding Sur</h1>
-        <p class="text-lg mt-2 font-light">Descubre y descarga los mejores mods creados por la comunidad</p>
-    </header>
-
-    <!-- Sección de pestañas -->
-    <div class="container mx-auto p-6">
-        <div class="tabs-container">
-            <!-- Botones de pestañas -->
-            <div class="tabs flex justify-center mb-6">
-                <button class="tab-btn active" data-tab="vsrMods">Mods de VSR Modding Sur</button>
-                <button class="tab-btn" data-tab="modhubMods">Mods Publicados en ModHub</button>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Farming Simulator Mods</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+      <link rel="stylesheet" href="styles.css">
+      <script>
+         // Cargar idioma por defecto
+         window.onload = function() {
+             const descripciones = document.querySelectorAll('.descripcion-mod');
+             descripciones.forEach(descripcion => {
+                 descripcion.textContent = descripcion.getAttribute('data-es');
+             });
+         }
+      </script>
+   </head>
+   <body class="bg-gray-100">
+      <header class="bg-custom text-custom p-6 text-center shadow-lg relative">
+         <h1 class="text-5xl font-extrabold tracking-tight">Mods Farming Simulator 22 by VSR Modding Sur</h1>
+         <p class="text-lg mt-2 font-light">Descubre y descarga los mejores mods creados por la comunidad</p>
+      </header>
+      <!-- Sección de Mods Vanquish081 -->
+      <section class="container mx-auto p-6">
+         <h2 class="text-3xl font-semibold mb-6 text-gray-700">Mods Vanquish081</h2>
+         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Primer Mod -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+               <img src="imagenes_web/master.jpg" alt="Mod 1" class="w-full h-48 object-cover" loading="lazy">
+               <div class="p-4">
+                  <h3 class="text-2xl font-semibold text-gray-800">ArtMaster 2k24 Pack</h3>
+                  <p class="text-gray-600 mt-2 descripcion-mod" 
+                     data-es="Pack para la producción de sus propios productos agrícolas. - RokoMaster Produce cal. Precio: 12.500 €. - Fertimaster Produce fertilizante. Precio: 19.500 €. - PigMaster Produce alimento para cerdos. Precio: 22.500 € - MixMaster Produce alimento para vacas. Precio: 27.500 €." >
+                  </p>
+                  <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" 
+                     target="_blank" 
+                     class="inline-flex items-center mt-4 px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-lg shadow-lg hover:from-red-600 hover:to-red-800 transition duration-300 ease-in-out transform hover:scale-105">
+                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v4a1 1 0 001 1h14a1 1 0 001-1v-4m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                     </svg>
+                     Descargar
+                  </a>
+               </div>
             </div>
-
-            <!-- Contenido de cada pestaña -->
-            <div id="vsrMods" class="tab-content active">
-                <h2 class="text-2xl font-semibold mb-4">Mods de VSR Modding Sur</h2>
-                <ul class="list-disc ml-5">
-                    <li>Mod 1: Descripción del mod 1</li>
-                    <li>Mod 2: Descripción del mod 2</li>
-                    <li>Mod 3: Descripción del mod 3</li>
-                </ul>
+         </div>
+      </section>
+      <!-- Sección de Mods erShaba -->
+      <section class="container mx-auto p-6">
+         <h2 class="text-3xl font-semibold mb-6 text-gray-700">Mods erShaba</h2>
+         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Segundo Mod -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+               <img src="imagenes_web/mapa.jpg" alt="Mod 2" class="w-full h-48 object-cover" loading="lazy">
+               <div class="p-4">
+                  <h3 class="text-2xl font-semibold text-gray-800">El Villarejo</h3>
+                  <p class="text-gray-600 mt-2 descripcion-mod" 
+                     data-es="Bienvenidos a El Villarejo. Un lugar basado 100% en la imaginación. ¡Este puede ser tu lugar definitivo en el mundo de la Simulación Agrícola! No dejes que te lo cuenten...." >
+                  </p>
+                  <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=287930&title=fs2022" 
+                     target="_blank" 
+                     class="inline-flex items-center mt-4 px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-lg shadow-lg hover:from-red-600 hover:to-red-800 transition duration-300 ease-in-out transform hover:scale-105">
+                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v4a1 1 0 001 1h14a1 1 0 001-1v-4m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                     </svg>
+                     Descargar
+                  </a>
+               </div>
             </div>
-
-            <div id="modhubMods" class="tab-content">
-                <h2 class="text-2xl font-semibold mb-4">Mods publicados en ModHub</h2>
-                <ul class="list-disc ml-5">
-                    <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=292060&title=fs2022" target="_blank" class="text-blue-600 hover:underline">PT 600</a></li>
-                    <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=289014&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Lizard Revolution</a></li>
-                    <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Trans Volquete Lateral-38 TC</a></li>
-                    <li><a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=275922&title=fs2022" target="_blank" class="text-blue-600 hover:underline">Lizard Diamond</a></li>
-                </ul>
+         </div>
+      </section>
+      <!-- Sección de Mods raulycristi1 -->
+      <section class="container mx-auto p-6">
+         <h2 class="text-3xl font-semibold mb-6 text-gray-700">Mods raulycristi1</h2>
+         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Tercer Mod -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+               <img src="imagenes_web/pt600.jpg" alt="Mod 3" class="w-full h-48 object-cover" loading="lazy">
+               <div class="p-4">
+                  <h3 class="text-2xl font-semibold text-gray-800">PT 600</h3>
+                  <p class="text-gray-600 mt-2 descripcion-mod" 
+                     data-es="PT-600 Tipico Camion Americano Grande y Robusto con Mucha Potencia, Varias Opciones de Tienda y Cambios de color. -Motor: PT 405 PT 550 PT 600 -Configuración Color Interior -Configuración Color Principal -Configuración Color Secundario -Configuración Color Vinilos -Configuración Color Llantas -Configuración de Vinilos -Configuración de Balizas y Parachoques -Luces Marcador y Botonera Precios: PT 405: 95000 € PT 550: 119.125 € PT 600: 185.500 €.">
+                  </p>
+                  <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=292060&title=fs2022" 
+                     target="_blank" 
+                     class="inline-flex items-center mt-4 px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-lg shadow-lg hover:from-red-600 hover:to-red-800 transition duration-300 ease-in-out transform hover:scale-105">
+                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v4a1 1 0 001 1h14a1 1 0 001-1v-4m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                     </svg>
+                     Descargar
+                  </a>
+               </div>
             </div>
-        </div>
-    </div>
-
-    <footer class="bg-custom text-white p-4 text-center mt-12">
-        <p class="text-sm">&copy; 2024 Mods Farming Simulator 22. Todos los derechos reservados.</p>
-        <p class="text-xs mt-2">Hecho con ❤️ por raulycristi1</p>
-        <div class="mt-4">
-            <a href="index.html" class="mr-4 text-white hover:text-gray-300">Mis Mods</a>
-            <a href="modhub.html" class="mr-4 text-white hover:text-gray-300">Mods de ModHub</a>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+               <img src="imagenes_web/revo.jpg" alt="Mod 2" class="w-full h-48 object-cover" loading="lazy">
+               <div class="p-4">
+                  <h3 class="text-2xl font-semibold text-gray-800">Lizard Revolution</h3>
+                  <p class="text-gray-600 mt-2 descripcion-mod" 
+                     data-es="Lizard Revolution es un Camión Creado Desde 0, No Está Basado en Ningún Camión Real. Animación en los 3 Ejes de Suspensión Real. Tiene Múltiple Animaciones Como Vibración en Tubo de Escape, Filtros, Depósito de Combustible y Motor. También Tiene Animación de Ventilador del Motor, Luces Personalizada, Pegatinas. Varias Opciones de Tienda y Cambios de color. -Motor: RV 480, RV 580, RV 650, RV 1723 -Configuración Color Principal -Configuración Color Secundario -Configuración Color Interior -Configuración Color Llantas -Configuración de Tubo de Escape -Configuración de Faros -Configuracion de Pegatinas -Precios: Lizard RV 480: 87.000 € Lizard RV 580: 97.125 € Lizard RV 650: 102.500 € Lizard RV 1723: 117.500 €." >
+                  </p>
+                  <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=289014&title=fs2022" 
+                     target="_blank" 
+                     class="inline-flex items-center mt-4 px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-lg shadow-lg hover:from-red-600 hover:to-red-800 transition duration-300 ease-in-out transform hover:scale-105">
+                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v4a1 1 0 001 1h14a1 1 0 001-1v-4m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                     </svg>
+                     Descargar
+                  </a>
+               </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+               <img src="imagenes_web/screenshot0.jpg" alt="Mod 1" class="w-full h-48 object-cover" loading="lazy">
+               <div class="p-4">
+                  <h3 class="text-2xl font-semibold text-gray-800">Trans Volquete Lateral-38 TC</h3>
+                  <p class="text-gray-600 mt-2 descripcion-mod" 
+                     data-es="Trans Volquete Lateral-38 es un remolque diseñado para facilitar el transporte y descarga lateral de materiales agrícolas y otros productos. Este volquete tiene una capacidad considerable, permitiendo a los jugadores manejar grandes volúmenes de carga de manera eficiente. La descarga lateral es una característica clave que ofrece flexibilidad en el manejo de materiales, especialmente en espacios reducidos donde la descarga trasera podría no ser factible. Además, el mod está diseñado con un alto nivel de detalle, ofreciendo una experiencia visual y funcional realista dentro del juego. - Suspensión Real - Selección Color Principal - Selección Color Secundario - Selección Color Llantas - Selección de Ruedas - Selección de Pegatinas - Selección de Enganche Trasero - Precio: Volquete Pequeño 18.500 € - Capacidad: 38.000 L.">
+                  </p>
+                  <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" 
+                     target="_blank" 
+                     class="inline-flex items-center mt-4 px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-lg shadow-lg hover:from-red-600 hover:to-red-800 transition duration-300 ease-in-out transform hover:scale-105">
+                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v4a1 1 0 001 1h14a1 1 0 001-1v-4m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                     </svg>
+                     Descargar
+                  </a>
+               </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+               <img src="imagenes_web/Diamond.jpg" alt="Mod 1" class="w-full h-48 object-cover" loading="lazy">
+               <div class="p-4">
+                  <h3 class="text-2xl font-semibold text-gray-800">Lizard Diamond</h3>
+                  <p class="text-gray-600 mt-2 descripcion-mod" 
+                     data-es="Lizard Diamond Camión Europeo Grande con Mucha Fuerza de Tiro y con un Estilo de Cabina Peculiar, diseñado para transporte de carga de larga distancia en Europa, destaca por su diseño aerodinámico, eficiencia de combustible y comodidad del conductor. Motor: DXi-480 DXi-715 DXi-1130 DXi-1535 -Configuración Color Interior -Configuración Color Principal -Configuración Color Secundario -Configuración Color Vinilos -Configuración Color Llantas -Configuración de Vinilos Precio DXi-480: 115.000 € Precio DXi-715: 120.000 € Precio DXi-1130: 135.000 € Precio DXi-1535: 160.000 €." >
+                  </p>
+                  <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=275922&title=fs2022" 
+                     target="_blank" 
+                     class="inline-flex items-center mt-4 px-4 py-2 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-lg shadow-lg hover:from-red-600 hover:to-red-800 transition duration-300 ease-in-out transform hover:scale-105">
+                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v4a1 1 0 001 1h14a1 1 0 001-1v-4m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                     </svg>
+                     Descargar
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="bg-custom text-white p-4 text-center mt-12">
+         <p class="text-sm">&copy; 2024 Mods Farming Simulator 22. Todos los derechos reservados.</p>
+         <p class="text-xs mt-2">Hecho con ❤️ por raulycristi1</p>
+         <div class="mt-4">
             <a href="https://github.com/raulycristi1" class="mr-4 text-white hover:text-gray-300">GitHub</a>
             <a href="https://twitter.com/raulycristi1" class="mr-4 text-white hover:text-gray-300">Twitter</a>
             <a href="https://www.youtube.com/raulycristi1" class="mr-4 text-white hover:text-gray-300">Youtube</a>
-        </div>
-    </footer>
-
-    <script>
-        // Obtener todos los botones de pestañas y contenidos
-        const tabs = document.querySelectorAll('.tab-btn');
-        const contents = document.querySelectorAll('.tab-content');
-
-        // Agregar el evento click a cada botón de pestaña
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Quitar la clase 'active' de todos los botones y contenidos
-                tabs.forEach(btn => btn.classList.remove('active'));
-                contents.forEach(content => content.classList.remove('active'));
-
-                // Agregar la clase 'active' al botón y contenido correspondiente
-                tab.classList.add('active');
-                document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
-            });
-        });
-    </script>
-</body>
+            <a href="https://www.farming-simulator.com/mods.php?title=fs2022&searchMod=raulycristi1" class="mr-4 text-white hover:text-gray-300">ModHub</a>
+         </div>
+      </footer>
+   </body>
 </html>
