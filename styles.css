@@ -37,7 +37,7 @@ header p {
 
 .tabs button {
     background-color: #84AB14;
-    color: #3498db; /* Código hex para el color */
+    color: #870902; /* Código hex para el color */
     border: none;
     cursor: pointer;
     padding: 10px 20px;
@@ -47,12 +47,12 @@ header p {
 }
 
 .tabs button.active {
-    background-color: #84AB14;
+    background-color: #870902;
     color: white;
 }
 
 .tabs button:hover {
-    background-color: #84AB14;
+    background-color: #870902;
     color: white;
 }
 
@@ -70,7 +70,7 @@ header p {
 
 /* Footer */
 footer {
-    background-color: #84AB14;
+    background-color: #870902;
     color: white;
     padding: 20px;
     text-align: center;
@@ -95,7 +95,7 @@ footer a:hover {
 /* Links en los mods */
 footer ul li a {
     text-decoration: none;
-    color: #ffffff; /* Color para los enlaces en el pie de página */
+    color: #870902; /* Color para los enlaces en el pie de página */
 }
 
 footer ul li a:hover {
