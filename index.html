@@ -20,33 +20,20 @@
       <!-- TODO EL CONTENIDO DE TU WEB SE MANTIENE IGUAL -->
 
 <footer class="bg-custom text-white p-4 text-center mt-12">
-
-   <!-- BOTÓN 1: https://intent (más compatible) -->
-   <a id="btn-intent-https"
-      href="https://intent://settings/#Intent;scheme=android-app;action=android.settings.SETTINGS;end;"
-      class="inline-block px-6 py-3 bg-blue-600 rounded-lg text-white font-semibold shadow-lg hover:bg-blue-700 transition mb-4 block">
-      Abrir Ajustes (Opción 1)
-   </a>
-
-   <!-- BOTÓN 2: intent:// (funciona en Chrome y Samsung Internet) -->
-   <a id="btn-intent-direct"
-      href="intent://settings#Intent;scheme=android;end"
-      class="inline-block px-6 py-3 bg-green-600 rounded-lg text-white font-semibold shadow-lg hover:bg-green-700 transition block">
-      Abrir Ajustes (Opción 2)
-   </a>
-
+  <a id="btn-play"
+     href="intent://details?id=com.tu.paquete.de.app#Intent;scheme=market;end"
+     class="inline-block px-6 py-3 bg-purple-600 rounded-lg text-white font-semibold shadow-lg hover:bg-purple-700 transition">
+    Abrir mi App en Google Play
+  </a>
 </footer>
 
 <script>
-   document.addEventListener("DOMContentLoaded", () => {
-      const isAndroid = /Android/i.test(navigator.userAgent);
-
-      // Ocultar ambos botones si NO es Android
-      if (!isAndroid) {
-         document.getElementById("btn-intent-https").style.display = "none";
-         document.getElementById("btn-intent-direct").style.display = "none";
-      }
-   });
+  document.addEventListener("DOMContentLoaded", () => {
+    const isAndroid = /Android/i.test(navigator.userAgent);
+    if (!isAndroid) {
+      document.getElementById("btn-play").style.display = "none";
+    }
+  });
 </script>
 
    </body>
