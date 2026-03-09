@@ -40,7 +40,7 @@
   <!-- Hero Section -->
   <header class="hero">
     <div class="hero-content">
-      <div class="hero-badge">FARMING SIMULATOR 22</div>
+      <div class="hero-badge">FARMING SIMULATOR</div>
       <h1 class="hero-title">VSR <span class="accent">MODDING</span> SUR</h1>
       <p class="hero-subtitle">Descubre y descarga los mejores mods creados por la comunidad</p>
       <div class="hero-stats">
@@ -96,180 +96,388 @@
 
   <!-- Mods Grid -->
   <main id="catalog" class="mods-section">
-    <div class="section-header">
-      <h2 class="section-title">
-        <span class="title-accent">▸</span> ÚLTIMOS MODS
-      </h2>
-      <div class="sort-options">
-        <span class="sort-label">Ordenar:</span>
-        <select class="sort-select">
-          <option>Más Recientes</option>
-          <option>Más Populares</option>
-          <option>Nombre A-Z</option>
-        </select>
+    <!-- Game Version Tabs -->
+    <div class="game-tabs">
+      <button class="tab-btn active" data-tab="fs25">
+        <span class="tab-icon">🎮</span>
+        <span>FS25</span>
+      </button>
+      <button class="tab-btn" data-tab="fs22">
+        <span class="tab-icon">🎮</span>
+        <span>FS22</span>
+      </button>
+    </div>
+
+    <!-- FS25 Mods -->
+    <div id="fs25" class="tab-content active">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="title-accent">▸</span> MODS FS25
+        </h2>
+      </div>
+      <div class="mods-grid">
+        
+        <!-- Mod Card - ArtMaster 2k25 -->
+        <article class="mod-card">
+          <div class="card-image">
+            <img src="imagenes_web/master.jpg" alt="ArtMaster 2k25 Pack" loading="lazy">
+            <div class="card-overlay">
+              <span class="version-tag">FS25</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-tag production">PRODUCCIÓN</span>
+            </div>
+            <h3 class="card-title">ArtMaster 2k25 Pack</h3>
+            <p class="card-desc">Pack para la producción de sus propios productos agrícolas. Incluye múltiples máquinas...</p>
+            <div class="card-footer">
+              <span class="card-date">📅 Hoy</span>
+              <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="download-btn">
+                <span>DESCARGAR</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mod Card - Lizard Revolution -->
+        <article class="mod-card">
+          <div class="card-image">
+            <img src="imagenes_web/revo.jpg" alt="Lizard Revolution" loading="lazy">
+            <div class="card-overlay">
+              <span class="version-tag">FS25</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-tag trucks">CAMIONES</span>
+            </div>
+            <h3 class="card-title">Lizard Revolution</h3>
+            <p class="card-desc">Camión creado desde cero. Múltiples versiones y configuraciones...</p>
+            <div class="card-footer">
+              <span class="card-date">📅 Hace 3 días</span>
+              <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=289014&title=fs2022" target="_blank" class="download-btn">
+                <span>DESCARGAR</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mod Card - Paquete de Halloween -->
+        <article class="mod-card">
+          <div class="card-image">
+            <img src="imagenes_web/calavaza.jpg" alt="Paquete de Halloween" loading="lazy">
+            <div class="card-overlay">
+              <span class="version-tag">FS25</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-tag production">OBJETOS</span>
+            </div>
+            <h3 class="card-title">Paquete de Halloween</h3>
+            <p class="card-desc">Paquete de Halloween con cinco calabazas, un ataúd, un caldero, un letrero y un fantasma iluminado. Generan dinero por hora.</p>
+            <div class="card-footer">
+              <span class="card-date">📅 Recientemente</span>
+              <a href="https://www.farming-simulator.com/mod.php?mod_id=338557&title=fs2025" target="_blank" class="download-btn">
+                <span>DESCARGAR</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mod Card - Semirremolque Fliegl -->
+        <article class="mod-card">
+          <div class="card-image">
+            <img src="imagenes_web/semi.jpg" alt="Semirremolque Fliegl" loading="lazy">
+            <div class="card-overlay">
+              <span class="version-tag">FS25</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-tag implements">REMOLQUES</span>
+            </div>
+            <h3 class="card-title">Semirremolque Fliegl</h3>
+            <p class="card-desc">Semirremolque Fliegl robusto y versátil, diseñado para el transporte eficiente de cargas pesadas y voluminosas. Plataformas Bajas. $17,000. Colores configurables.</p>
+            <div class="card-footer">
+              <span class="card-date">📅 Recientemente</span>
+              <a href="https://www.farming-simulator.com/mod.php?mod_id=331525&title=fs2025" target="_blank" class="download-btn">
+                <span>DESCARGAR</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mod Card - Contenedor Multifruta + Pack MultiLift -->
+        <article class="mod-card">
+          <div class="card-image">
+            <img src="imagenes_web/MultiLift.jpg" alt="Contenedor Multifruta + Pack MultiLift" loading="lazy">
+            <div class="card-overlay">
+              <span class="version-tag">FS25</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-tag implements">REMOLQUES</span>
+            </div>
+            <h3 class="card-title">Contenedor Multifruta + Pack MultiLift</h3>
+            <p class="card-desc">Contenedor Multifruta + MultiLift. Puedes almacenar lo que quieras. Con el botón plegable puedes abrir y cerrar la puerta. MultiLift 20.25 GT ($35,000), Contenedor Multifruta XL ($10,000 - 48,000L), Tanque de líquido ($6,500 - 30,000L), Plataforma ($3,500), Plataforma para troncos ($4,500). Selección de color.</p>
+            <div class="card-footer">
+              <span class="card-date">📅 Recientemente</span>
+              <a href="https://www.farming-simulator.com/mod.php?mod_id=308046&title=fs2025" target="_blank" class="download-btn">
+                <span>DESCARGAR</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-tag implements">REMOLQUES</span>
+            </div>
+            <h3 class="card-title">Semirremolque Fliegl</h3>
+            <p class="card-desc">Semirremolque Fliegl robusto y versátil, diseñado para el transporte eficiente de cargas pesadas y voluminosas. Categoría: Plataformas Bajas. Precio: $17,000. Color principal a elegir. Color del chasis a elegir. Color de la pegatina a elegir. Configuración de protectores.</p>
+            <div class="card-footer">
+              <span class="card-date">📅 Recientemente</span>
+              <a href="https://www.farming-simulator.com/mod.php?mod_id=331525&title=fs2025" target="_blank" class="download-btn">
+                <span>DESCARGAR</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
 
-    <div class="mods-grid">
-      
-      <!-- Mod Card 1 -->
-      <article class="mod-card">
-        <div class="card-image">
-          <img src="imagenes_web/master.jpg" alt="ArtMaster 2k24 Pack" loading="lazy">
-          <div class="card-overlay">
-            <span class="version-tag">FS25</span>
-          </div>
+    <!-- Mod Card - Deutz AgroStar 661 -->
+    <article class="mod-card">
+      <div class="card-image">
+        <img src="imagenes_web/Deutz.jpg" alt="Deutz AgroStar 661" loading="lazy">
+        <div class="card-overlay">
+          <span class="version-tag">FS25</span>
         </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="category-tag production">PRODUCCIÓN</span>
-          </div>
-          <h3 class="card-title">ArtMaster 2k24 Pack</h3>
-          <p class="card-desc">Pack para la producción de sus propios productos agrícolas. Incluye múltiples máquinas...</p>
-          <div class="card-footer">
-            <span class="card-date">📅 Hoy</span>
-            <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="download-btn">
-              <span>DESCARGAR</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
-            </a>
-          </div>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="category-tag trucks">TRACTORES</span>
         </div>
-      </article>
+        <h3 class="card-title">Deutz AgroStar 661</h3>
+        <p class="card-desc">Tractor clásico Deutz-Fahr AgroStar 6.61 (1990-1995). Motor Deutz 6 cilindos refrigerado por aire, 143 cv. Confiable y duradero. Precio: $28,000. Velocidad máxima: 40 km/h. Capacidad: 290 L. Configuración de ruedas, guardabarros, ventanas tintadas y espejos.</p>
+        <div class="card-footer">
+          <span class="card-date">📅 Recientemente</span>
+          <a href="https://www.farming-simulator.com/mod.php?mod_id=329762&title=fs2025" target="_blank" class="download-btn">
+            <span>DESCARGAR</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
 
-      <!-- Mod Card 2 -->
-      <article class="mod-card">
-        <div class="card-image">
-          <img src="imagenes_web/mapa.jpg" alt="El Villarejo" loading="lazy">
-          <div class="card-overlay">
-            <span class="version-tag">FS25</span>
-          </div>
+    <!-- Mod Card - Fiat 1000/1300 DT Super -->
+    <article class="mod-card">
+      <div class="card-image">
+        <img src="imagenes_web/fiat.jpg" alt="Fiat 1000/1300 DT Super" loading="lazy">
+        <div class="card-overlay">
+          <span class="version-tag">FS25</span>
         </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="category-tag maps">MAPAS</span>
-          </div>
-          <h3 class="card-title">El Villarejo</h3>
-          <p class="card-desc">Bienvenidos a El Villarejo. Un lugar basado 100% en la imaginación...</p>
-          <div class="card-footer">
-            <span class="card-date">📅 Ayer</span>
-            <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=287930&title=fs2022" target="_blank" class="download-btn">
-              <span>DESCARGAR</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
-            </a>
-          </div>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="category-tag trucks">TRACTORES</span>
         </div>
-      </article>
+        <h3 class="card-title">Fiat 1000/1300 DT Super</h3>
+        <p class="card-desc">Fiat 1000 y 1300 DT Super. Modelo 1000 tracción simple (2WD), 1300 tracción doble (4WD). 1000 DT: 82 CV - €38,500. 1300 DT: 150 CV - €58,500. Velocidad máxima: 20/35 km/h. Múltiples configuraciones de color y componentes.</p>
+        <div class="card-footer">
+          <span class="card-date">📅 Recientemente</span>
+          <a href="https://www.farming-simulator.com/mod.php?mod_id=327270&title=fs2025" target="_blank" class="download-btn">
+            <span>DESCARGAR</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
 
-      <!-- Mod Card 3 -->
-      <article class="mod-card">
-        <div class="card-image">
-          <img src="imagenes_web/pt600.jpg" alt="PT 600" loading="lazy">
-          <div class="card-overlay">
-            <span class="version-tag">FS25</span>
-          </div>
+    <!-- Mod Card - Mack RD 690 -->
+    <article class="mod-card">
+      <div class="card-image">
+        <img src="imagenes_web/Mack RD 690.jpg" alt="Mack RD 690" loading="lazy">
+        <div class="card-overlay">
+          <span class="version-tag">FS25</span>
         </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="category-tag trucks">CAMIONES</span>
-          </div>
-          <h3 class="card-title">PT 600</h3>
-          <p class="card-desc">Camión americano grande y robusto. Múltiples versiones disponibles...</p>
-          <div class="card-footer">
-            <span class="card-date">📅 Hace 2 días</span>
-            <a href="https://www.farming-simulator.com/mod.php?mod_id=285159&title=fs2022" target="_blank" class="download-btn">
-              <span>DESCARGAR</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
-            </a>
-          </div>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="category-tag trucks">CAMIONES</span>
         </div>
-      </article>
+        <h3 class="card-title">Mack RD 690</h3>
+        <p class="card-desc">Camión clásico Mack RD. Motor 500 HP o 710 HP Turbo. Velocidad máxima: 120 mph. Caja trasera 12,000L + Remolque 16,000L. Mack R: $79,000. Mack R Turbo: $94,500. Remolque: $16,000. Múltiples configuraciones de color y componentes.</p>
+        <div class="card-footer">
+          <span class="card-date">📅 Recientemente</span>
+          <a href="https://www.farming-simulator.com/mod.php?mod_id=326589&title=fs2025" target="_blank" class="download-btn">
+            <span>DESCARGAR</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
 
-      <!-- Mod Card 4 -->
-      <article class="mod-card">
-        <div class="card-image">
-          <img src="imagenes_web/revo.jpg" alt="Lizard Revolution" loading="lazy">
-          <div class="card-overlay">
-            <span class="version-tag">FS25</span>
+    <!-- FS22 Mods -->
+    <div id="fs22" class="tab-content">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="title-accent">▸</span> MODS FS22
+        </h2>
+      </div>
+      <div class="mods-grid">
+        
+        <!-- Mod Card - El Villarejo -->
+        <article class="mod-card">
+          <div class="card-image">
+            <img src="imagenes_web/mapa.jpg" alt="El Villarejo" loading="lazy">
+            <div class="card-overlay">
+              <span class="version-tag">FS22</span>
+            </div>
           </div>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="category-tag trucks">CAMIONES</span>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-tag maps">MAPAS</span>
+            </div>
+            <h3 class="card-title">El Villarejo</h3>
+            <p class="card-desc">Bienvenidos a El Villarejo. Un lugar basado 100% en la imaginación...</p>
+            <div class="card-footer">
+              <span class="card-date">📅 Ayer</span>
+              <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=287930&title=fs2022" target="_blank" class="download-btn">
+                <span>DESCARGAR</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+              </a>
+            </div>
           </div>
-          <h3 class="card-title">Lizard Revolution</h3>
-          <p class="card-desc">Camión creado desde cero. Múltiples versiones y configuraciones...</p>
-          <div class="card-footer">
-            <span class="card-date">📅 Hace 3 días</span>
-            <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=289014&title=fs2022" target="_blank" class="download-btn">
-              <span>DESCARGAR</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
+        </article>
 
-      <!-- Mod Card 5 -->
-      <article class="mod-card">
-        <div class="card-image">
-          <img src="imagenes_web/screenshot0.jpg" alt="Trans Volquete Lateral" loading="lazy">
-          <div class="card-overlay">
-            <span class="version-tag">FS25</span>
+        <!-- Mod Card - PT 600 -->
+        <article class="mod-card">
+          <div class="card-image">
+            <img src="imagenes_web/pt600.jpg" alt="PT 600" loading="lazy">
+            <div class="card-overlay">
+              <span class="version-tag">FS22</span>
+            </div>
           </div>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="category-tag implements">IMPLEMENTOS</span>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-tag trucks">CAMIONES</span>
+            </div>
+            <h3 class="card-title">PT 600</h3>
+            <p class="card-desc">Camión americano grande y robusto. Múltiples versiones disponibles...</p>
+            <div class="card-footer">
+              <span class="card-date">📅 Hace 2 días</span>
+              <a href="https://www.farming-simulator.com/mod.php?mod_id=285159&title=fs2022" target="_blank" class="download-btn">
+                <span>DESCARGAR</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+              </a>
+            </div>
           </div>
-          <h3 class="card-title">Trans Volquete Lateral</h3>
-          <p class="card-desc">Remolque de gran capacidad. Capacidad: 38.000 L</p>
-          <div class="card-footer">
-            <span class="card-date">📅 Hace 5 días</span>
-            <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="download-btn">
-              <span>DESCARGAR</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
+        </article>
 
-      <!-- Mod Card 6 -->
-      <article class="mod-card">
-        <div class="card-image">
-          <img src="imagenes_web/Diamond.jpg" alt="Lizard Diamond" loading="lazy">
-          <div class="card-overlay">
-            <span class="version-tag">FS25</span>
+        <!-- Mod Card - Trans Volquete Lateral -->
+        <article class="mod-card">
+          <div class="card-image">
+            <img src="imagenes_web/screenshot0.jpg" alt="Trans Volquete Lateral" loading="lazy">
+            <div class="card-overlay">
+              <span class="version-tag">FS22</span>
+            </div>
           </div>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="category-tag trucks">CAMIONES</span>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-tag implements">IMPLEMENTOS</span>
+            </div>
+            <h3 class="card-title">Trans Volquete Lateral</h3>
+            <p class="card-desc">Remolque de gran capacidad. Capacidad: 38.000 L</p>
+            <div class="card-footer">
+              <span class="card-date">📅 Hace 5 días</span>
+              <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=294442&title=fs2022" target="_blank" class="download-btn">
+                <span>DESCARGAR</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+              </a>
+            </div>
           </div>
-          <h3 class="card-title">Lizard Diamond</h3>
-          <p class="card-desc">Camión europeo de lujo. Potencia y elegancia combinadas...</p>
-          <div class="card-footer">
-            <span class="card-date">📅 Hace 1 semana</span>
-            <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=275922&title=fs2022" target="_blank" class="download-btn">
-              <span>DESCARGAR</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
+        </article>
 
+        <!-- Mod Card - Lizard Diamond -->
+        <article class="mod-card">
+          <div class="card-image">
+            <img src="imagenes_web/Diamond.jpg" alt="Lizard Diamond" loading="lazy">
+            <div class="card-overlay">
+              <span class="version-tag">FS22</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-tag trucks">CAMIONES</span>
+            </div>
+            <h3 class="card-title">Lizard Diamond</h3>
+            <p class="card-desc">Camión europeo de lujo. Potencia y elegancia combinadas...</p>
+            <div class="card-footer">
+              <span class="card-date">📅 Hace 1 semana</span>
+              <a href="https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=275922&title=fs2022" target="_blank" class="download-btn">
+                <span>DESCARGAR</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </div>
   </main>
+
+  <!-- JavaScript for Tabs -->
+  <script>
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
 
   <!-- Footer -->
   <footer class="footer">
