@@ -756,11 +756,23 @@ body {
   align-items: center;
   padding-top: 15px;
   border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .card-date {
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.creator {
+  font-size: 0.8rem;
+  color: var(--accent-primary);
+  font-weight: 500;
+  background: rgba(0, 255, 136, 0.1);
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 255, 136, 0.3);
 }
 
 .download-btn {
